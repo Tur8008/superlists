@@ -70,7 +70,6 @@ class ListViewTest(TestCase):
         self.assertEqual(response.context['list'], correct_list)
 
 
-
 class NewListTest(TestCase):
     def test_can_save_a_POST_request(self):
         self.client.post('/lists/new', data={'item_text': 'A new list item'})
