@@ -149,6 +149,6 @@ LOGGING = {
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = '465'
 EMAIL_HOST_USER = 'no-reply@biz-intel.ru'
-EMAIL_HOST_PASSWORD = 'jhrppzvkfxasikuz'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
 EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = 'no-reply@biz-intel.ru'
